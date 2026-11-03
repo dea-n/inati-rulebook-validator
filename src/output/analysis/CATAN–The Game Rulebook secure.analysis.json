@@ -1,0 +1,271 @@
+{
+  "source": "CATAN–The Game Rulebook secure.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "analyzed_at": "2026-09-27 17:08:40",
+  "stats": {
+    "pages": 12,
+    "sentences": 389,
+    "noise_sentences": 170,
+    "avg_sentence_tokens": 15.7,
+    "headings": 73,
+    "issues": {
+      "timing_cue": 16,
+      "vague_quantifier": 3,
+      "ambiguous_reference": 7,
+      "hedge": 1,
+      "long_sentence": 2
+    }
+  },
+  "terminology": [],
+  "issues": [
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        165
+      ],
+      "quote": "If another player plays 5 more, they immediately receive this tile.",
+      "explanation": "It is unclear whether 'plays 5 more' means 5 additional roads beyond 5 (totaling 10), or if it simply means they need 5 roads to reclaim the tile from the current holder. The phrasing 'more' is ambiguous.",
+      "severity": "medium",
+      "suggested_rewrite": "If another player plays 5 continuous roads (regardless of whether they previously had the tile), they immediately receive this tile.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        4
+      ],
+      "scope": "local",
+      "id": 0
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        169
+      ],
+      "quote": "If another player plays 5 more, they immediately receive this tile.",
+      "explanation": "It's ambiguous what '5 more' refers to—does it mean 5 more roads than the current longest route, or an absolute total of 5 roads? The sentence lacks clarity on the comparison being made.",
+      "severity": "medium",
+      "suggested_rewrite": "If another player plays 5 continuous roads or more, they immediately receive this tile.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        4
+      ],
+      "scope": "local",
+      "id": 1
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        193,
+        194,
+        195
+      ],
+      "quote": "Each player who has more than 7 resource cards must choose half (rounded down) of their resource cards and return them to the supply.",
+      "explanation": "It is unclear whether the discard phase (S194) happens before or after the robber is moved (S195). The rules show both happen when a 7 is rolled, but the sequence matters: can a player who discards cards then steal from others via the robber, and can they potentially re-gain cards?",
+      "severity": "medium",
+      "suggested_rewrite": "Each player who has more than 7 resource cards must choose half (rounded down) of their resource cards and return them to the supply. Then, the active player moves the robber.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        6
+      ],
+      "scope": "local",
+      "id": 2
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        197
+      ],
+      "quote": "If multiple players have buildings on the new hex, you choose one player to rob.",
+      "explanation": "It is unclear whether 'buildings' refers to both settlements and cities, or only one type. The term 'buildings' is vague and could be interpreted narrowly.",
+      "severity": "low",
+      "suggested_rewrite": "If multiple players have settlements or cities on the new hex, you choose one player to rob.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        6
+      ],
+      "scope": "local",
+      "id": 3
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        220
+      ],
+      "quote": "Other players may accept your proposal, make counteroffers, or make their own proposals.",
+      "explanation": "It is unclear whether other players who didn't initiate the trade can make proposals to the active player (which would interrupt their turn) or only respond to the active player's proposal. This affects turn flow and what actions are allowed.",
+      "severity": "medium",
+      "suggested_rewrite": "Other players may accept your proposal, make counteroffers to you, or decline.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 4
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        248,
+        250
+      ],
+      "quote": "If another player has more continuous roads in play, they immediately receive this tile.",
+      "explanation": "The timing of when the tile transfer happens is unclear. Sentence 248 says it happens immediately when another player has more roads, but sentence 250 suggests the tile is held until a new leader emerges. It's ambiguous whether the tile changes hands every time someone builds roads that exceed the current holder's count, or only at specific moments.",
+      "severity": "medium",
+      "suggested_rewrite": "If another player completes a continuous route longer than the current Longest Route tile holder's route, they immediately receive this tile.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        8
+      ],
+      "scope": "local",
+      "id": 5
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        250
+      ],
+      "quote": "If, when a player's route is broken (see example), they no longer meet the requirements for the Longest Route, the tile is returned to the supply.",
+      "explanation": "The phrase 'when a player's route is broken' uses the passive voice ambiguously. It's unclear if this refers to any player's route being broken, or specifically the current Longest Route tile holder's route. Players might interpret this as the tile being returned whenever anyone's route is broken.",
+      "severity": "medium",
+      "suggested_rewrite": "If the player with the Longest Route tile breaks their route so they no longer have at least 5 continuous roads, the tile is returned to the supply.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        8
+      ],
+      "scope": "local",
+      "id": 6
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        290
+      ],
+      "quote": "The first player to play 5 continuous roads 5 receives this tile.",
+      "explanation": "The phrase '5 continuous roads 5' is confusing—the repeated '5' and unclear meaning of 'continuous roads' make it uncertain whether the player needs 5 roads in a line, 5 total roads, or something else.",
+      "severity": "high",
+      "suggested_rewrite": "The first player to build 5 connected roads receives this tile.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        9
+      ],
+      "scope": "local",
+      "id": 7
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        300
+      ],
+      "quote": "Steal 1 random new hex.",
+      "explanation": "It's unclear what 'new hex' means—does it refer to an unoccupied hex, a hex the robber hasn't been on before, or something else?",
+      "severity": "medium",
+      "suggested_rewrite": "Steal 1 random resource card from a player with a settlement or city on an adjacent hex.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        9
+      ],
+      "scope": "local",
+      "id": 8
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        297,
+        310
+      ],
+      "quote": "Reveal all your Victory Point cards, including any built this turn, if you can reach the number of VPs needed to win.",
+      "explanation": "S297 indicates you reveal VP cards only 'if you can reach the number needed to win,' implying conditional revelation. S310 says to 'turn over any number' to show you've reached 10 VPs. S298 states VP cards 'must keep...hidden in your player area,' which directly contradicts the obligation to reveal them in S297 and S310.",
+      "severity": "high",
+      "suggested_rewrite": "<UNKNOWN>",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        9,
+        10
+      ],
+      "scope": "local",
+      "id": 9
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        335
+      ],
+      "quote": "Arrange the discs face down in A-B-C order.",
+      "explanation": "It's unclear what 'A-B-C order' refers to—without context, players won't know if this is alphabetical, numerical, positional, or something else.",
+      "severity": "medium",
+      "suggested_rewrite": "Arrange the number discs face down around the board in numerical order (starting from wherever you choose).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        11
+      ],
+      "scope": "local",
+      "id": 10
+    },
+    {
+      "sentence_ids": [
+        162,
+        288
+      ],
+      "quote": "The first player to play 3 Knight cards receives this tile.",
+      "explanation": "Sentence 162 (page 4, LARGEST ARMY section) states 'The first player to play 3 Knight cards receives this tile.' However, sentence 288 (page 9, LARGEST ARMY section under KNIGHT) repeats the exact same rule. These are not contradictions by themselves, but when examined against sentence 307, there is a critical inconsistency about what 'playing' means. Sentence 307 says 'If another player has more Knight cards in play' - using 'in play' language. This creates ambiguity about whether the rule counts cards 'played' (activated as development cards) or cards 'in play' (built and kept). The text at 162/235/289/288 uses 'play' as a verb (to play a card), while 307 uses 'in play' as a state. Since a Knight card can only be played once per turn (S271), but you could accumulate multiple Knight cards, the distinction matters: are you counting each activation or total cards kept face-up? The rulebook does not clarify this contradiction between the action of 'playing' a card versus having cards 'in play.'",
+      "severity": "high",
+      "suggested_rewrite": "Clarify whether 'play 3 Knight cards' means (a) activate 3 Knight cards across multiple turns (cumulative plays), or (b) have 3 Knight cards in your play area simultaneously. The current text at S307 ('more Knight cards in play') suggests interpretation (b), but S162, S288 use verb form ('play') suggesting interpretation (a). Recommend: 'The first player to play 3 Knight cards (across their turns) receives this tile' or 'The first player with 3 or more Knight cards played and in play receives this tile' to make the mechanic explicit.",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        4,
+        9
+      ],
+      "scope": "document",
+      "id": 11
+    },
+    {
+      "sentence_ids": [
+        165,
+        169
+      ],
+      "quote": "If another player plays 5 more, they immediately receive this tile.",
+      "explanation": "Sentence 165 (page 4) states 'If another player plays 5 more, they immediately receive this tile.' This is in the context of LONGEST ROUTE and refers to having 5 more continuous roads. However, sentence 169 (also page 4, LONGEST ROUTE section) states 'If another player plays 5 more, they immediately receive this tile.' The same wording appears to apply. But sentence 164 earlier states 'The first player to play 5 continuous roads... receives this tile,' and sentence 168 also states 'The first player to play 5 continuous roads receives this tile.' The contradiction is: does 'plays 5 more' mean 'has 5 additional roads beyond the current holder' or 'has any road total of 5 or more'? If Player A has exactly 5 and Player B builds a 6th road, does Player B 'play 5 more' (meaning 5 additional beyond A's 5)? The phrase '5 more' is ambiguous—it could mean '5 additional' (total of 6+) or '5 consecutive roads that are longer' (any route longer than the current holder's). This is unresolved in the text.",
+      "severity": "medium",
+      "suggested_rewrite": "Replace 'plays 5 more' with clearer language: either 'has a continuous road longer than 5' or 'has 6 or more continuous roads in play' to unambiguously indicate whether the challenger must exceed the current holder's route length or reach an absolute minimum of 5 roads.",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        4
+      ],
+      "scope": "document",
+      "id": 12
+    },
+    {
+      "sentence_ids": [
+        5,
+        309
+      ],
+      "quote": "The first player to reach 10 victory points (VPs) on their turn wins.",
+      "explanation": "Sentence 5 (page 2, OBJECTIVE section) states 'The first player to reach 10 victory points (VPs) on their turn wins.' Sentence 309 (page 10, WINNING THE GAME section) states 'If you have 10 or more VPs at any point during your turn, the game ends immediately and you are the winner!' These are consistent in the core rule, but S309 is much more permissive: it says 'at any point during your turn' whereas S5 says 'on their turn.' S309 clarifies it can happen at any point (not just the end of turn), but both require it to be your turn. However, S310 says 'Turn over any number of Victory Point cards, including ones built this turn' — meaning you can win the moment you build/gain VPs that push you to 10+, even in the middle of your turn's Action phase. This is not contradictory with S5/S309 if read carefully, but the phrase 'on their turn' in S5 is vaguer than 'at any point during your turn' in S309. This is not a hard contradiction.",
+      "severity": "low",
+      "suggested_rewrite": "This is not a genuine contradiction. Both statements are consistent: you win when you reach 10+ VPs during your turn (S5), which can happen at any point during that turn (S309). The rules are just stated at different levels of precision. No rewrite needed.",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        2,
+        10
+      ],
+      "scope": "document",
+      "id": 13
+    }
+  ],
+  "tokens": {
+    "input": 28475,
+    "output": 8507
+  }
+}

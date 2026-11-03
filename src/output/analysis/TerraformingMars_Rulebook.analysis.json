@@ -1,0 +1,658 @@
+{
+  "source": "TerraformingMars_Rulebook.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "analyzed_at": "2026-09-28 23:50:22",
+  "stats": {
+    "pages": 16,
+    "ocr_pages": 1,
+    "sentences": 559,
+    "noise_sentences": 9,
+    "ocr_sentences": 0,
+    "avg_sentence_tokens": 17.9,
+    "headings": 50,
+    "issues": {
+      "vague_quantifier": 48,
+      "ambiguous_reference": 24,
+      "hedge": 15,
+      "timing_cue": 18,
+      "weak_obligation": 2,
+      "long_sentence": 4,
+      "inconsistent_terminology": 2
+    }
+  },
+  "terminology": [
+    {
+      "term": "trtrack",
+      "variants": {
+        "tr track": 3,
+        "tr-track": 1
+      },
+      "pages": [
+        4,
+        7,
+        12
+      ]
+    },
+    {
+      "term": "trstep",
+      "variants": {
+        "tr step": 5,
+        "trstep": 2
+      },
+      "pages": [
+        5,
+        10,
+        14,
+        15
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        31
+      ],
+      "quote": "In the Action phase, players take turns doing 1 or 2 actions, going around the table until everyone has passed.",
+      "explanation": "It is unclear whether a player can choose to do 1 or 2 actions on each individual turn, or if the number is fixed per generation/round. The phrasing 'doing 1 or 2 actions' could mean each player does that many per turn, or it could be interpreted as some players doing 1 and others doing 2 throughout the phase.",
+      "severity": "medium",
+      "suggested_rewrite": "In the Action phase, players take turns doing either 1 or 2 actions each turn, going around the table until everyone has passed.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        3
+      ],
+      "scope": "local",
+      "id": 0
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        35,
+        36
+      ],
+      "quote": "When a global parameter has reached its goal, it can't be raised any further, and so does not increase your TR.",
+      "explanation": "It's unclear whether a parameter at its goal stays at its current TR increase value or provides no TR at all. Sentence 36 says to 'ignore that part of the effect,' which could mean the parameter doesn't increase TR retroactively, but this contradicts the implication in S35 that the parameter already increased TR when you initially raised it to the goal.",
+      "severity": "medium",
+      "suggested_rewrite": "When a global parameter has reached its goal, it can't be raised any further, and raising that parameter no longer increases your TR.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        3
+      ],
+      "scope": "local",
+      "id": 1
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        35,
+        42
+      ],
+      "quote": "When a global parameter has reached its goal, it can't be raised any further, and so does not increase your TR.",
+      "explanation": "S35 says parameters at their goal 'can't be raised any further,' but S42 specifies the exact numerical targets for the game to end (14% oxygen, 9 oceans, +8°C). If parameters literally cannot go higher once their goal is reached, players need clarity on whether the targets in S42 are the 'goals' referenced in S35, or if there are intermediate goals and the game can continue past the S42 targets.",
+      "severity": "high",
+      "suggested_rewrite": "When a global parameter reaches its maximum (14% oxygen, 9 oceans, +8°C temperature), it can't be raised any further, and raising that parameter no longer increases your TR.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        3
+      ],
+      "scope": "local",
+      "id": 2
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        65
+      ],
+      "quote": "The generation marker measures time (rounds) and starts at 1, moving up on the TR track.",
+      "explanation": "It is unclear whether the generation marker 'moves up on the TR track' (physically positioned on the TR track) or moves along its own track. The relationship between the generation marker and the TR track is ambiguous.",
+      "severity": "medium",
+      "suggested_rewrite": "The generation marker measures time (rounds), starts at 1, and advances each round.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        4
+      ],
+      "scope": "local",
+      "id": 3
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        111,
+        112
+      ],
+      "quote": "If you can't raise the oxygen level you don't get the increase in TR either.",
+      "explanation": "The rule states that you don't get the TR increase if you can't raise oxygen, but it's unclear whether you still place the greenery tile and receive other bonuses (the placement bonus), or whether the entire action is blocked.",
+      "severity": "medium",
+      "suggested_rewrite": "If you can't raise the oxygen level, you don't get the TR increase, but you still place the tile and receive any placement bonus.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        5
+      ],
+      "scope": "local",
+      "id": 4
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        114
+      ],
+      "quote": "May not be placed next to another city (exception: Noctis city must always be placed on its reserved area).",
+      "explanation": "It's unclear whether the exception means Noctis city is exempt from the restriction against adjacent cities, or simply that it has a placement requirement. The wording doesn't clarify if Noctis can be placed next to other cities.",
+      "severity": "medium",
+      "suggested_rewrite": "May not be placed next to another city (exception: Noctis city must always be placed on its reserved area and is exempt from the adjacency restriction).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        5
+      ],
+      "scope": "local",
+      "id": 5
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        128
+      ],
+      "quote": "In the game, resource icons refer to resource cubes, while resource icons inside brown boxes refer to production of that resource (see the project card below).",
+      "explanation": "This sentence uses 'resource icons' to refer to two different things: icons that refer to resource cubes and icons that refer to production. Without seeing the example cards, players may not understand which icons fall into which category.",
+      "severity": "medium",
+      "suggested_rewrite": "In the game, plain resource icons refer to resource cubes, while resource icons inside brown boxes refer to production of that resource (see the project card below).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        6
+      ],
+      "scope": "local",
+      "id": 6
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        133,
+        142,
+        144
+      ],
+      "quote": "During the production phase you add resource cubes equal to your production.",
+      "explanation": "Sentence 133 states you add resource cubes during the production phase, but sentences 142 and 144 state that leftover energy is converted into heat 'at the beginning of the production phase.' This creates ambiguity about whether energy conversion happens before or after you gain resources.",
+      "severity": "high",
+      "suggested_rewrite": "During the production phase, after converting leftover energy into heat, you add resource cubes equal to your production.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        6
+      ],
+      "scope": "local",
+      "id": 7
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        157,
+        158,
+        159
+      ],
+      "quote": "Effect / action: Boxes marked by a blue ribbon show an ongoing effect or action that may be used during the game.",
+      "explanation": "The distinction between 'effect' and 'action' is introduced but then S159 explains when each can be used, yet S157-158 presents them together as if they are both 'marked by a blue ribbon' and both 'may be used during the game.' This could confuse players about whether effects and actions are the same thing or different things with different rules.",
+      "severity": "medium",
+      "suggested_rewrite": "Effect / action: Boxes marked by a blue ribbon show either an ongoing effect (always active) or an action (may be used once per generation).",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        6
+      ],
+      "scope": "local",
+      "id": 8
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        195,
+        196
+      ],
+      "quote": "Shuffle the 10 standard corporation cards (excluding the 2 Corporate Era corporations) and deal 2 to each remaining player.",
+      "explanation": "Sentence 195 states that 2 corporation cards are dealt to each remaining player. Sentence 196 then begins describing dealing 10 project cards to each remaining player. However, sentence 209 (the example) states that 2 corporation cards AND 10 project cards are dealt to each player, which would mean 10 corporation cards total for 3 players. But sentence 195 says to deal 2 to each 'remaining' player (after beginners), yet sentence 209 appears to be showing all three players receiving both cards, suggesting confusion about whether 'remaining' means some or all.",
+      "severity": "high",
+      "suggested_rewrite": "Shuffle the 10 standard corporation cards (excluding the 2 Corporate Era corporations) and deal 2 to each player.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 9
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        202,
+        203
+      ],
+      "quote": "In player order, players then reveal their chosen corporation, get their starting resources and production (if any), and then pay 3 M€ for each project card they keep.",
+      "explanation": "It is unclear whether the 3 M€ payment per card happens before or after resources and production are received. If a player receives 42 M€ starting resources, the timing would affect their ability to pay for cards. The phrase 'and then pay' suggests it happens after receiving resources, but this should be explicit.",
+      "severity": "medium",
+      "suggested_rewrite": "In player order, players then reveal their chosen corporation and receive their starting resources and production (if any). After all players have done this, each player pays 3 M€ for each project card they keep.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 10
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        190
+      ],
+      "quote": "You start with 1 production of each resource on the player board, so place player markers on the tracks (only in standard game.)",
+      "explanation": "The phrase 'You start with 1 production of each resource' is ambiguous - it could mean 1 production point in each of the 6 resource tracks (as shown in sentence 208), or it could mean something else. The parenthetical clarification helps but the main clause is still vague about which resources and how many tracks.",
+      "severity": "low",
+      "suggested_rewrite": "You start with 1 production of each resource, so place player markers on '1' for each of the six production tracks (only in standard game.)",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 11
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        245,
+        246
+      ],
+      "quote": "You can choose to take 1 or 2 actions on your turn.",
+      "explanation": "The rule states players can take '1 or 2 actions' but then says 'if you take no action at all (pass), you are out.' This creates ambiguity: can a player choose to take 0 actions as a valid turn action, or does 'passing' mean they must remain in the round but simply skip their turn for that round? The phrasing suggests 'choose to take 1 or 2' implies these are the only valid options, yet the next sentence permits 'no action at all.'",
+      "severity": "medium",
+      "suggested_rewrite": "On your turn, you can choose to take 1 or 2 actions, or you can pass (take no actions), which removes you from the round for the rest of the generation.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        8
+      ],
+      "scope": "local",
+      "id": 12
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        258,
+        259
+      ],
+      "quote": "And so the turn continues around until everyone is out by doing no actions.",
+      "explanation": "The sentence 'And so the turn continues around until everyone is out by doing no actions' immediately precedes 'All players perform this phase simultaneously,' creating confusion about whether the production phase (which happens simultaneously) is part of the same round or a separate phase that occurs after turns finish.",
+      "severity": "low",
+      "suggested_rewrite": "The turns continue around the table until everyone has passed.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        8
+      ],
+      "scope": "local",
+      "id": 13
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        299
+      ],
+      "quote": "These effects (and other effects triggered by the card you just played) are performed in any order you choose.",
+      "explanation": "It is unclear whether 'in any order you choose' means the player can choose any order for all effects together, or if each triggered effect must be performed individually. This could lead to disputes about the sequence of effects when multiple effects interact with each other.",
+      "severity": "medium",
+      "suggested_rewrite": "You may perform these effects (and other effects triggered by the card you just played) in any order you choose, so long as all effects are completed before your action ends.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        9
+      ],
+      "scope": "local",
+      "id": 14
+    },
+    {
+      "category": "unclear_terminology",
+      "sentence_ids": [
+        301,
+        304,
+        305
+      ],
+      "quote": "Resources or production with a red frame means that you can affect any player you choose (even yourself).",
+      "explanation": "The rule uses both 'red frame' (S301) and 'red border' (S304) to describe the same concept, creating inconsistent terminology. Additionally, S304-305 introduce 'red' tiles and tags separately, but S301 already uses 'red' to mean something different (any player's resource/production). This could confuse players about what 'red' means in different contexts.",
+      "severity": "medium",
+      "suggested_rewrite": "Resources or production with a red border means that you can affect any player you choose (even yourself).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        9
+      ],
+      "scope": "local",
+      "id": 15
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        308
+      ],
+      "quote": "Red-bordered resources are optional, so card C does not remove your own plants, even if you are the only player that has any plant resources.",
+      "explanation": "The phrase 'Red-bordered resources are optional' is vague. It's unclear whether this means: (1) choosing to apply an effect with red-bordered resources is optional, (2) choosing which player's resources to affect is optional, or (3) something else. The example helps but doesn't fully clarify the rule.",
+      "severity": "medium",
+      "suggested_rewrite": "You can choose whether or not to apply a red-bordered resource or production effect, so card C does not remove your own plants, even if you are the only player that has any plant resources.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        10
+      ],
+      "scope": "local",
+      "id": 16
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        323
+      ],
+      "quote": "Active cards (blue, D, E) have ongoing effects that may trigger at any time, or actions that you can use (just like the corporations).",
+      "explanation": "The phrase 'may trigger at any time' is ambiguous about when ongoing effects occur—whether they trigger automatically, require player action, or can be triggered by the player at their discretion. The distinction between 'trigger' (automatic) and 'use' (player action) is not clearly distinguished.",
+      "severity": "medium",
+      "suggested_rewrite": "Active cards (blue, D, E) have ongoing effects that activate at specified times, or actions that you can use (just like the corporations).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        10
+      ],
+      "scope": "local",
+      "id": 17
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        332,
+        333
+      ],
+      "quote": "Sell patents: You may discard a number of cards from hand to gain the same number of M€.",
+      "explanation": "It's unclear whether 'the same number' refers to the number of cards discarded or some other quantity. While the intent is likely clear (cards = M€), the phrasing creates ambiguity.",
+      "severity": "low",
+      "suggested_rewrite": "Sell patents: You may discard a number of cards from your hand to gain M€ equal to the number of cards discarded.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        10
+      ],
+      "scope": "local",
+      "id": 18
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        375,
+        376
+      ],
+      "quote": "When the game ends, though, Kim also produces heat and has 12 in her resource box, compared to Stanley's 12 and Robinson's 5.",
+      "explanation": "The sentence states Kim has 12 heat and Stanley has 12 heat, but then sentence 376 says 'Stanley and Kim both get 5 VPs for first place', implying a tie. However, the exact wording 'compared to Stanley's 12' creates ambiguity about whether Kim and Stanley tied or one had more.",
+      "severity": "low",
+      "suggested_rewrite": "When the game ends, though, Kim also produces heat and has 12 in her resource box, the same as Stanley's 12, compared to Robinson's 5.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        11
+      ],
+      "scope": "local",
+      "id": 19
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        394,
+        395
+      ],
+      "quote": "When all three global parameters (ocean, temperature, and oxygen) have reached their goals, the game ends at the end of that generation.",
+      "explanation": "It is unclear whether the extra chance to convert plants into greenery tiles (S395) happens before or after the game end condition is checked. The phrase 'at the end of that generation' combined with the separate statement about an 'extra chance' after the production phase creates ambiguity about the sequence of events.",
+      "severity": "high",
+      "suggested_rewrite": "When all three global parameters (ocean, temperature, and oxygen) have reached their goals, the game ends after the following sequence: the current production phase completes, players have one extra chance to convert plants into greenery tiles (in player order; this may also trigger other effects such as placement bonuses), and then final scoring takes place.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        12
+      ],
+      "scope": "local",
+      "id": 20
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        420
+      ],
+      "quote": "If you don't understand the symbols - read the explanation in parenthesis on the card, or see page 14 & 15 in this rulebook.",
+      "explanation": "The phrase 'page 14 & 15' is ambiguous—it could mean both pages together, or it could be unclear if the explanation spans both pages or if there are separate sections on each page.",
+      "severity": "low",
+      "suggested_rewrite": "If you don't understand the symbols, read the explanation in parentheses on the card or see pages 14–15 in this rulebook.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        12
+      ],
+      "scope": "local",
+      "id": 21
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        431,
+        432
+      ],
+      "quote": "Before you choose your cards, place 2 neutral city tiles on the map with an adjacent greenery tile each (these tiles are not yours, and do not increase the oxygen level): reveal and discard the 4 top cards of the deck and use their cost numbers to determine the positions of the tiles.",
+      "explanation": "It's unclear whether the 4 cards are revealed before or after placing the cities, or if they are revealed to determine the positions as the cities are placed. The placement method for determining positions is ambiguous.",
+      "severity": "high",
+      "suggested_rewrite": "Before you choose your cards, reveal and discard the 4 top cards of the deck. Use their cost numbers to determine where to place 2 neutral city tiles on the map, each with an adjacent greenery tile (these tiles are not yours and do not increase the oxygen level).",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        13
+      ],
+      "scope": "local",
+      "id": 22
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        441,
+        442
+      ],
+      "quote": "You have a neutral opponent that you can steal from, or reduce any kind of resources and production from.",
+      "explanation": "It's unclear whether these are two separate action options (steal from OR reduce from) or if reducing resources/production is part of stealing. The relationship between the two actions is ambiguous.",
+      "severity": "medium",
+      "suggested_rewrite": "You have a neutral opponent from whom you can steal resources or reduce any kind of resources and production.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        13
+      ],
+      "scope": "local",
+      "id": 23
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        449,
+        450,
+        451
+      ],
+      "quote": "Each player first gets 4 cards and chooses one to draft, putting it aside and passing the rest to the next player.",
+      "explanation": "The direction players pass cards is not specified in sentence 449, but is only clarified later in sentence 454. This creates ambiguity about whether 'next player' means left, right, clockwise, or counter-clockwise, especially since the direction changes by generation according to sentence 454.",
+      "severity": "medium",
+      "suggested_rewrite": "Each player first gets 4 cards and chooses one to draft, putting it aside and passing the rest clockwise (or to the left).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        13
+      ],
+      "scope": "local",
+      "id": 24
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        450,
+        454
+      ],
+      "quote": "Then you have 3 cards; set aside 1 of them and pass the rest to the left.",
+      "explanation": "Sentence 450 explicitly states to pass 'to the left,' but sentence 454 indicates that passing direction alternates by generation (clockwise for even, counter-clockwise for odd). This contradicts the fixed 'left' direction in sentence 450.",
+      "severity": "high",
+      "suggested_rewrite": "Then you have 3 cards; set aside 1 of them and pass the rest to the next player.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        13
+      ],
+      "scope": "local",
+      "id": 25
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        492
+      ],
+      "quote": "As an action, 8 plant resources can be converted into a greenery tile that you place on the board.",
+      "explanation": "The phrase 'can be converted' is ambiguous about whether this is always possible (i.e., you always have the option if you have 8 plants) or whether it's merely possible in some circumstances. Players might disagree on whether this action is guaranteed to be available or conditional.",
+      "severity": "medium",
+      "suggested_rewrite": "As an action, you may convert 8 plant resources into a greenery tile that you place on the board.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        14
+      ],
+      "scope": "local",
+      "id": 26
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        536
+      ],
+      "quote": "The tile must be placed next to another tile that you own if possible.",
+      "explanation": "The phrase 'if possible' is ambiguous. It could mean (1) place it next to your tile if there is an available area next to one of your tiles, or (2) place it next to your tile only if doing so is physically possible on the board. The rule's intent is unclear when a player has tiles but no empty adjacent areas.",
+      "severity": "medium",
+      "suggested_rewrite": "The tile must be placed adjacent to another tile that you own, if an empty area next to one of your tiles is available.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        15
+      ],
+      "scope": "local",
+      "id": 27
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        536,
+        537
+      ],
+      "quote": "The tile must be placed next to another tile that you own if possible.",
+      "explanation": "Sentences 536 and 537 together create a contradiction about when a greenery tile can be placed freely. S536 says it 'must be placed next to' your own tile 'if possible,' but S537 says 'If you have no tiles or no area next to them, you may place it on any available area.' The contradiction is whether placement next to your tiles is mandatory when possible (S536) or only preferred (implied by S537's exception).",
+      "severity": "high",
+      "suggested_rewrite": "The tile must be placed adjacent to another tile that you own. If you have no tiles, or if no empty area exists adjacent to your tiles, you may place it on any available area.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        15
+      ],
+      "scope": "local",
+      "id": 28
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        545
+      ],
+      "quote": "A card that removes red-borded resources, may remove those resources from any one player (this effect may also be performed partly, or not at all).",
+      "explanation": "The phrase 'any one player' is ambiguous—it could mean (1) from exactly one player, or (2) from any single player (including yourself). Given context about targeting 'you or an opponent,' the rule should clarify whether you can target yourself.",
+      "severity": "low",
+      "suggested_rewrite": "A card that removes red-bordered resources may remove those resources from any player, including yourself (this effect may also be performed partly, or not at all).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        15
+      ],
+      "scope": "local",
+      "id": 29
+    },
+    {
+      "sentence_ids": [
+        61,
+        190
+      ],
+      "quote": "All players start at 20.",
+      "explanation": "Sentence 61 (page 4, GAME BOARD section) states 'All players start at 20' regarding the Terraform rating (TR) track. However, sentence 190 (page 7, SETUP section) states 'You start with 1 production of each resource on the player board, so place player markers on the tracks (only in standard game.)' This is ambiguous, but the real contradiction appears in sentence 66: 'Solo games start with a TR of 14'. More critically, sentence 469 in the SYMBOLS section (page 14) reiterates 'You start at 20.' Yet sentence 438 states 'Start with a terraform rating of 14 instead of 20 (marked 'solo' on the track)'. The core issue is: sentence 61 says all players start at 20, but this is contradicted by sentences 66 and 438 which specify solo games start at 14, not 20.",
+      "severity": "high",
+      "suggested_rewrite": "Sentence 61 should be revised to: 'All players start at 20 (or 14 in solo games).' Alternatively, add a parenthetical qualification: 'All players start at 20 (except in solo variant, see page 13).'",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        4,
+        7
+      ],
+      "scope": "document",
+      "id": 30
+    },
+    {
+      "sentence_ids": [
+        177,
+        69
+      ],
+      "quote": "Place the 9 ocean tiles on their reserved space.",
+      "explanation": "Sentence 177 (page 7, SETUP section) instructs to 'Place the 9 ocean tiles on their reserved space.' However, sentence 69 (page 4, GAME BOARD section) states 'Ocean tiles: This global parameter starts with 9 tiles in a stack here, to be placed on the board during the game.' and sentence 533 (page 15, Tiles section) clearly specifies 'There are 12 areas on the game board that are reserved for ocean tiles'. This creates a contradiction: if there are 12 reserved areas but only 9 ocean tiles total in the game, sentence 177 cannot mean all tiles should be placed on the board at setup. The setup instruction contradicts the fundamental game structure where ocean tiles are placed gradually throughout the game as players use the Aquifer standard project (sentence 337-338).",
+      "severity": "high",
+      "suggested_rewrite": "Sentence 177 should be revised to: 'Place the stack of 9 ocean tiles next to the board (in their reserved space on the board's track, or in a supply pile), ready to be placed during gameplay.' The phrase 'on their reserved space' is misleading; it should clarify that the stack is placed in the game supply, not that all tiles are immediately placed on the map.",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        4,
+        7
+      ],
+      "scope": "document",
+      "id": 31
+    },
+    {
+      "sentence_ids": [
+        190,
+        208
+      ],
+      "quote": "You start with 1 production of each resource on the player board, so place player markers on the tracks (only in standard game.)",
+      "explanation": "Sentence 190 (page 7, SETUP section) states players should mark 1 production of each resource '(only in standard game.)' This parenthetical qualifier indicates that in non-standard games (like Corporate Era), players do NOT start with 1 production of each resource. However, sentence 208 (page 7, SETUP example) states 'They each choose their color, take a player board and mark starting production by placing markers on '1' on the six production tracks' with no qualification or exception mentioned for variants. Sentence 424 confirms: 'Players start with no extra production of resources' in Corporate Era. Sentence 208's example shows setup for a standard game but provides no guidance on what to do in Corporate Era, creating a contradiction about standard setup procedures.",
+      "severity": "medium",
+      "suggested_rewrite": "Sentence 208 should include a qualifier: 'They each choose their color, take a player board and mark starting production by placing markers on '1' on the six production tracks (this is only done in standard games; in Corporate Era, do not place any starting production markers).' Alternatively, move the full Corporate Era setup rules earlier to clarify the difference before the example.",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        7
+      ],
+      "scope": "document",
+      "id": 32
+    },
+    {
+      "sentence_ids": [
+        35,
+        36
+      ],
+      "quote": "When a global parameter has reached its goal, it can't be raised any further, and so does not increase your TR.",
+      "explanation": "Sentence 35 states that when a global parameter reaches its goal, it 'can't be raised any further, and so does not increase your TR.' Sentence 36 directly follows: 'You may still play cards and actions that increase the parameter - just ignore that part of the effect.' These two sentences contradict each other: sentence 35 says the parameter 'can't be raised any further' (absolute prohibition), while sentence 36 says you 'may still play cards and actions that increase the parameter' (allowing the action but ignoring the increase). The contradiction is whether attempting to raise a maxed-out parameter is prohibited or merely ineffective.",
+      "severity": "medium",
+      "suggested_rewrite": "Sentence 35 should be revised to: 'When a global parameter has reached its goal, it can't be raised any further.' Sentence 36 should clarify: 'You may still play cards and actions that would increase the parameter, but the increase is ignored and you do not gain the TR increase that would normally accompany it.' This removes the apparent contradiction by clarifying that the action is allowed but the parameter increase is ignored.",
+      "category": "contradiction",
+      "quote_verified": false,
+      "pages": [
+        3
+      ],
+      "scope": "document",
+      "id": 33
+    }
+  ],
+  "tokens": {
+    "input": 59645,
+    "output": 10240
+  }
+}

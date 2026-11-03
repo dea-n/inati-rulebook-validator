@@ -1,0 +1,175 @@
+{
+  "source": "CATAN–The Game Rulebook secure.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "faq": [
+    {
+      "issue_id": 0,
+      "category": "unclear_wording",
+      "pages": [
+        4
+      ],
+      "severity": "medium",
+      "question": "To take the Longest Route tile, does the other player need 5 additional roads beyond what the current holder has, or just 5 roads total?",
+      "answer": "They need to build a continuous route of 5 roads total, regardless of whether they previously held the tile or how many roads the current holder has.",
+      "confidence": "high",
+      "source_quote": "If another player plays 5 more, they immediately receive this tile."
+    },
+    {
+      "issue_id": 1,
+      "category": "unclear_wording",
+      "pages": [
+        4
+      ],
+      "severity": "medium",
+      "question": "Does a player need 5 more roads than the current longest route to take the tile, or just 5 roads total?",
+      "answer": "A player needs to play 5 continuous roads or more to immediately receive the tile.",
+      "confidence": "high",
+      "source_quote": "If another player plays 5 more, they immediately receive this tile."
+    },
+    {
+      "issue_id": 2,
+      "category": "unclear_timing",
+      "pages": [
+        6
+      ],
+      "severity": "medium",
+      "question": "When a 7 is rolled, do players discard cards before or after the robber is moved?",
+      "answer": "Players who have more than 7 resource cards must discard first (choosing half, rounded down, to return to the supply), then the active player moves the robber.",
+      "confidence": "high",
+      "source_quote": "Each player who has more than 7 resource cards must choose half (rounded down) of their resource cards and return them to the supply."
+    },
+    {
+      "issue_id": 3,
+      "category": "unclear_wording",
+      "pages": [
+        6
+      ],
+      "severity": "low",
+      "question": "When using the robber on a hex with multiple buildings, do settlements and cities both count, or just one type?",
+      "answer": "Both settlements and cities count; if multiple players have either type on the hex, you choose which player to rob.",
+      "confidence": "high",
+      "source_quote": "If multiple players have buildings on the new hex, you choose one player to rob."
+    },
+    {
+      "issue_id": 4,
+      "category": "unclear_wording",
+      "pages": [
+        7
+      ],
+      "severity": "medium",
+      "question": "During another player's turn, can I propose a trade to them, or can I only accept, counteroffer, or decline their proposal?",
+      "answer": "Other players may accept the active player's proposal, make counteroffers to them, or decline—they cannot initiate their own proposals during someone else's turn.",
+      "confidence": "high",
+      "source_quote": "Other players may accept your proposal, make counteroffers, or make their own proposals."
+    },
+    {
+      "issue_id": 5,
+      "category": "unclear_timing",
+      "pages": [
+        8
+      ],
+      "severity": "medium",
+      "question": "Does the Longest Route tile change hands every time someone builds roads to exceed the current holder, or only when a longer route is completed?",
+      "answer": "The tile changes hands immediately when another player completes a continuous route longer than the current holder's route.",
+      "confidence": "high",
+      "source_quote": "If another player has more continuous roads in play, they immediately receive this tile."
+    },
+    {
+      "issue_id": 6,
+      "category": "unclear_wording",
+      "pages": [
+        8
+      ],
+      "severity": "medium",
+      "question": "If a player's route gets broken and they no longer have 5 continuous roads, does the Longest Route tile get returned?",
+      "answer": "Yes—if the player holding the Longest Route tile breaks their route so they no longer have at least 5 continuous roads, the tile is immediately returned to the supply.",
+      "confidence": "high",
+      "source_quote": "If, when a player's route is broken (see example), they no longer meet the requirements for the Longest Route, the tile is returned to the supply."
+    },
+    {
+      "issue_id": 7,
+      "category": "unclear_wording",
+      "pages": [
+        9
+      ],
+      "severity": "high",
+      "question": "What exactly does the player need to build to receive the Longest Route tile?",
+      "answer": "The first player to build 5 connected roads receives this tile.",
+      "confidence": "high",
+      "source_quote": "The first player to play 5 continuous roads 5 receives this tile."
+    },
+    {
+      "issue_id": 8,
+      "category": "unclear_wording",
+      "pages": [
+        9
+      ],
+      "severity": "medium",
+      "question": "What does 'steal 1 random new hex' mean when using the robber?",
+      "answer": "You steal 1 random resource card from a player who has a settlement or city on an adjacent hex to where the robber is placed.",
+      "confidence": "high",
+      "source_quote": "Steal 1 random new hex."
+    },
+    {
+      "issue_id": 10,
+      "category": "unclear_wording",
+      "pages": [
+        11
+      ],
+      "severity": "medium",
+      "question": "What does 'arrange the discs face down in A-B-C order' mean?",
+      "answer": "Arrange the number discs face down around the board in numerical order, starting from wherever you choose.",
+      "confidence": "high",
+      "source_quote": "Arrange the discs face down in A-B-C order."
+    }
+  ],
+  "needs_human_review": [
+    {
+      "issue_id": 9,
+      "category": "contradiction",
+      "pages": [
+        9,
+        10
+      ],
+      "severity": "high",
+      "quote": "Reveal all your Victory Point cards, including any built this turn, if you can reach the number of VPs needed to win.",
+      "explanation": "S297 indicates you reveal VP cards only 'if you can reach the number needed to win,' implying conditional revelation. S310 says to 'turn over any number' to show you've reached 10 VPs. S298 states VP cards 'must keep...hidden in your player area,' which directly contradicts the obligation to reveal them in S297 and S310.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 11,
+      "category": "contradiction",
+      "pages": [
+        4,
+        9
+      ],
+      "severity": "high",
+      "quote": "The first player to play 3 Knight cards receives this tile.",
+      "explanation": "Sentence 162 (page 4, LARGEST ARMY section) states 'The first player to play 3 Knight cards receives this tile.' However, sentence 288 (page 9, LARGEST ARMY section under KNIGHT) repeats the exact same rule. These are not contradictions by themselves, but when examined against sentence 307, there is a critical inconsistency about what 'playing' means. Sentence 307 says 'If another player has more Knight cards in play' - using 'in play' language. This creates ambiguity about whether the rule counts cards 'played' (activated as development cards) or cards 'in play' (built and kept). The text at 162/235/289/288 uses 'play' as a verb (to play a card), while 307 uses 'in play' as a state. Since a Knight card can only be played once per turn (S271), but you could accumulate multiple Knight cards, the distinction matters: are you counting each activation or total cards kept face-up? The rulebook does not clarify this contradiction between the action of 'playing' a card versus having cards 'in play.'",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 12,
+      "category": "contradiction",
+      "pages": [
+        4
+      ],
+      "severity": "medium",
+      "quote": "If another player plays 5 more, they immediately receive this tile.",
+      "explanation": "Sentence 165 (page 4) states 'If another player plays 5 more, they immediately receive this tile.' This is in the context of LONGEST ROUTE and refers to having 5 more continuous roads. However, sentence 169 (also page 4, LONGEST ROUTE section) states 'If another player plays 5 more, they immediately receive this tile.' The same wording appears to apply. But sentence 164 earlier states 'The first player to play 5 continuous roads... receives this tile,' and sentence 168 also states 'The first player to play 5 continuous roads receives this tile.' The contradiction is: does 'plays 5 more' mean 'has 5 additional roads beyond the current holder' or 'has any road total of 5 or more'? If Player A has exactly 5 and Player B builds a 6th road, does Player B 'play 5 more' (meaning 5 additional beyond A's 5)? The phrase '5 more' is ambiguous—it could mean '5 additional' (total of 6+) or '5 consecutive roads that are longer' (any route longer than the current holder's). This is unresolved in the text.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 13,
+      "category": "contradiction",
+      "pages": [
+        2,
+        10
+      ],
+      "severity": "low",
+      "quote": "The first player to reach 10 victory points (VPs) on their turn wins.",
+      "explanation": "Sentence 5 (page 2, OBJECTIVE section) states 'The first player to reach 10 victory points (VPs) on their turn wins.' Sentence 309 (page 10, WINNING THE GAME section) states 'If you have 10 or more VPs at any point during your turn, the game ends immediately and you are the winner!' These are consistent in the core rule, but S309 is much more permissive: it says 'at any point during your turn' whereas S5 says 'on their turn.' S309 clarifies it can happen at any point (not just the end of turn), but both require it to be your turn. However, S310 says 'Turn over any number of Victory Point cards, including ones built this turn' — meaning you can win the moment you build/gain VPs that push you to 10+, even in the middle of your turn's Action phase. This is not contradictory with S5/S309 if read carefully, but the phrase 'on their turn' in S5 is vaguer than 'at any point during your turn' in S309. This is not a hard contradiction.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    }
+  ]
+}

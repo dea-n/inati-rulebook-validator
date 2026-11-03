@@ -1,0 +1,48 @@
+{
+  "_note": "Two-page test rulebooks of an invented card game, one per supported language, written for the multilingual checks (language_checks.py). Each has the same planted problems: 5 cards at the start on page 1 against 6 on page 2 (contradiction), 'some cards' that can be played 'at any time' (unclear wording), and an effect that applies 'when a player wins a round' without saying when (unclear timing).",
+  "English": [
+    ["GOAL OF THE GAME", "Kartenjagd is a card game for two to four players. The player with the most points after four rounds wins the game. Each player starts the game with 5 cards in hand. Shuffle the deck and place it in the middle of the table."],
+    ["TURN", "On your turn you draw one card and play one card from your hand. Some cards can be played at any time. When a player wins a round, the effect of the card applies. After that, the next player takes a turn."],
+    ["SCORING", "At the end of a round every player counts the points on the cards in front of them. Each player starts with 6 cards in hand when a new round begins. The winner of the round takes the gold token."]
+  ],
+  "German": [
+    ["SPIELZIEL", "Kartenjagd ist ein Kartenspiel für zwei bis vier Spieler. Wer nach vier Runden die meisten Punkte hat, gewinnt das Spiel. Jeder Spieler beginnt das Spiel mit 5 Karten auf der Hand. Mische den Stapel und lege ihn in die Mitte des Tisches."],
+    ["SPIELABLAUF", "Wenn du an der Reihe bist, ziehst du eine Karte und spielst eine Karte aus deiner Hand. Einige Karten können jederzeit gespielt werden. Wenn ein Spieler eine Runde gewinnt, gilt die Wirkung der Karte. Danach ist der nächste Spieler an der Reihe."],
+    ["WERTUNG", "Am Ende einer Runde zählt jeder Spieler die Punkte der Karten vor sich. Jeder Spieler beginnt mit 6 Karten auf der Hand, wenn eine neue Runde anfängt. Der Gewinner der Runde nimmt sich den goldenen Spielstein."]
+  ],
+  "French": [
+    ["BUT DU JEU", "Kartenjagd est un jeu de cartes pour deux à quatre joueurs. Le joueur qui a le plus de points après quatre manches gagne la partie. Chaque joueur commence la partie avec 5 cartes en main. Mélangez la pioche et placez-la au milieu de la table."],
+    ["DÉROULEMENT", "À votre tour, vous piochez une carte et vous jouez une carte de votre main. Certaines cartes peuvent être jouées à tout moment. Quand un joueur gagne une manche, l'effet de la carte s'applique. Ensuite, c'est au joueur suivant de jouer."],
+    ["DÉCOMPTE", "À la fin d'une manche, chaque joueur compte les points des cartes posées devant lui. Chaque joueur commence avec 6 cartes en main quand une nouvelle manche débute. Le gagnant de la manche prend le jeton doré."]
+  ],
+  "Spanish": [
+    ["OBJETIVO DEL JUEGO", "Kartenjagd es un juego de cartas para dos a cuatro jugadores. El jugador que tenga más puntos después de cuatro rondas gana la partida. Cada jugador empieza la partida con 5 cartas en la mano. Baraja el mazo y colócalo en el centro de la mesa."],
+    ["TURNO", "En tu turno robas una carta y juegas una carta de tu mano. Algunas cartas se pueden jugar en cualquier momento. Cuando un jugador gana una ronda, se aplica el efecto de la carta. Después, le toca al siguiente jugador."],
+    ["PUNTUACIÓN", "Al final de una ronda, cada jugador cuenta los puntos de las cartas que tiene delante. Cada jugador empieza con 6 cartas en la mano cuando comienza una ronda nueva. El ganador de la ronda se lleva la ficha dorada."]
+  ],
+  "Italian": [
+    ["SCOPO DEL GIOCO", "Kartenjagd è un gioco di carte per due o quattro giocatori. Il giocatore che ha più punti dopo quattro round vince la partita. Ogni giocatore inizia la partita con 5 carte in mano. Mescola il mazzo e mettilo al centro del tavolo."],
+    ["TURNO", "Nel tuo turno peschi una carta e giochi una carta dalla tua mano. Alcune carte possono essere giocate in qualsiasi momento. Quando un giocatore vince un round, si applica l'effetto della carta. Dopo di che tocca al giocatore successivo."],
+    ["PUNTEGGIO", "Alla fine di un round ogni giocatore conta i punti delle carte che ha davanti a sé. Ogni giocatore inizia con 6 carte in mano quando comincia un nuovo round. Il vincitore del round prende il gettone dorato."]
+  ],
+  "Portuguese": [
+    ["OBJETIVO DO JOGO", "Kartenjagd é um jogo de cartas para dois a quatro jogadores. O jogador que tiver mais pontos depois de quatro rondas vence o jogo. Cada jogador começa o jogo com 5 cartas na mão. Baralhe o baralho e coloque-o no centro da mesa."],
+    ["TURNO", "No seu turno, você compra uma carta e joga uma carta da sua mão. Algumas cartas podem ser jogadas a qualquer momento. Quando um jogador vence uma ronda, o efeito da carta é aplicado. Depois disso, é a vez do próximo jogador."],
+    ["PONTUAÇÃO", "No fim de uma ronda, cada jogador conta os pontos das cartas que tem à sua frente. Cada jogador começa com 6 cartas na mão quando uma nova ronda começa. O vencedor da ronda fica com a ficha dourada."]
+  ],
+  "Albanian": [
+    ["QËLLIMI I LOJËS", "Kartenjagd është një lojë me letra për dy deri në katër lojtarë. Lojtari që ka më shumë pikë pas katër raundeve fiton lojën. Çdo lojtar e fillon lojën me 5 letra në dorë. Përziji pirgun e letrave dhe vendose në mes të tavolinës."],
+    ["RADHA", "Kur është radha jote, tërheq një letër dhe luan një letër nga dora jote. Disa letra mund të luhen në çdo kohë. Kur një lojtar fiton një raund, efekti i letrës zbatohet. Pas kësaj, radha i takon lojtarit tjetër."],
+    ["PIKËT", "Në fund të një raundi, çdo lojtar numëron pikët e letrave para tij. Çdo lojtar fillon me 6 letra në dorë kur fillon një raund i ri. Fituesi i raundit merr shenjën e artë."]
+  ],
+  "Greek": [
+    ["ΣΤΟΧΟΣ ΤΟΥ ΠΑΙΧΝΙΔΙΟΥ", "Το Kartenjagd είναι ένα παιχνίδι με κάρτες για δύο έως τέσσερις παίκτες. Ο παίκτης που έχει τους περισσότερους πόντους μετά από τέσσερις γύρους κερδίζει το παιχνίδι. Κάθε παίκτης ξεκινά το παιχνίδι με 5 κάρτες στο χέρι. Ανακατέψτε την τράπουλα και τοποθετήστε την στο κέντρο του τραπεζιού."],
+    ["ΣΕΙΡΑ", "Όταν έρθει η σειρά σου, τραβάς μία κάρτα και παίζεις μία κάρτα από το χέρι σου. Μερικές κάρτες μπορούν να παιχτούν οποιαδήποτε στιγμή. Όταν ένας παίκτης κερδίζει έναν γύρο, εφαρμόζεται το αποτέλεσμα της κάρτας. Μετά από αυτό, παίζει ο επόμενος παίκτης."],
+    ["ΒΑΘΜΟΛΟΓΙΑ", "Στο τέλος ενός γύρου, κάθε παίκτης μετράει τους πόντους των καρτών που έχει μπροστά του. Κάθε παίκτης ξεκινά με 6 κάρτες στο χέρι όταν αρχίζει ένας νέος γύρος. Ο νικητής του γύρου παίρνει το χρυσό μάρκερ."]
+  ],
+  "Dutch": [
+    ["DOEL VAN HET SPEL", "Kartenjagd is een kaartspel voor twee tot vier spelers. De speler met de meeste punten na vier rondes wint het spel. Elke speler begint het spel met 5 kaarten in de hand. Schud de stapel en leg hem in het midden van de tafel."],
+    ["BEURT", "Als je aan de beurt bent, trek je een kaart en speel je een kaart uit je hand. Sommige kaarten kunnen op elk moment worden gespeeld. Wanneer een speler een ronde wint, geldt het effect van de kaart. Daarna is de volgende speler aan de beurt."],
+    ["PUNTENTELLING", "Aan het einde van een ronde telt elke speler de punten van de kaarten voor zich. Elke speler begint met 6 kaarten in de hand wanneer een nieuwe ronde begint. De winnaar van de ronde pakt de gouden fiche."]
+  ]
+}

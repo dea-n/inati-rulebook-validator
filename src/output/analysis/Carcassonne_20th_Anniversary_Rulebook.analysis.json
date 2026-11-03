@@ -1,0 +1,62 @@
+{
+  "source": "Carcassonne_20th_Anniversary_Rulebook.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "analyzed_at": "2026-09-27 16:43:24",
+  "stats": {
+    "pages": 6,
+    "sentences": 150,
+    "noise_sentences": 4,
+    "avg_sentence_tokens": 18.2,
+    "headings": 11,
+    "issues": {
+      "timing_cue": 4,
+      "vague_quantifier": 10,
+      "weak_obligation": 1,
+      "ambiguous_reference": 2,
+      "long_sentence": 2,
+      "hedge": 1
+    }
+  },
+  "terminology": [],
+  "issues": [
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        93
+      ],
+      "quote": "You score 1 point for each surrounding tiles, as well as the monastery tile.",
+      "explanation": "The phrase 'each surrounding tiles' is grammatically incorrect and ambiguous. It is unclear whether players score 1 point per surrounding tile or some other amount.",
+      "severity": "medium",
+      "suggested_rewrite": "You score 1 point for each of the surrounding tiles, as well as 1 point for the monastery tile.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        5
+      ],
+      "scope": "local",
+      "id": 0
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        93,
+        109
+      ],
+      "quote": "You score 1 point for each surrounding tiles, as well as the monastery tile.",
+      "explanation": "S93 is unclear but could imply varying points based on surrounding tiles, while S109 explicitly states a completed monastery scores exactly 9 points. These seem to contradict regarding how monastery scoring works.",
+      "severity": "high",
+      "suggested_rewrite": "A completed monastery scores 9 points (8 surrounding tiles × 1 point each, plus 1 point for the monastery tile itself).",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        5
+      ],
+      "scope": "local",
+      "id": 1
+    }
+  ],
+  "tokens": {
+    "input": 18359,
+    "output": 3095
+  }
+}

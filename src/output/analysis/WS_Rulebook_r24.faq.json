@@ -1,0 +1,171 @@
+{
+  "source": "WS_Rulebook_r24.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "faq": [
+    {
+      "issue_id": 0,
+      "category": "unclear_wording",
+      "pages": [
+        1
+      ],
+      "severity": "medium",
+      "question": "When calculating final scores, what three things can give me points: birds, eggs, and tucked birds?",
+      "answer": "Yes. Your final score comes from points earned on birds you've played, eggs on those birds, and any bird cards you've tucked under other birds during the game.",
+      "confidence": "high",
+      "source_quote": "The winner is the player with the most points accumulated from birds, and tucked birds."
+    },
+    {
+      "issue_id": 1,
+      "category": "unclear_wording",
+      "pages": [
+        2
+      ],
+      "severity": "medium",
+      "question": "What exactly do I place next to the bird tray during setup?",
+      "answer": "Place the deck next to the bird tray, then populate the tray with 3 face-up bird cards.",
+      "confidence": "high",
+      "source_quote": "Place it next to the bird tray, then populate the tray with 3 face-up bird cards."
+    },
+    {
+      "issue_id": 3,
+      "category": "unclear_wording",
+      "pages": [
+        2
+      ],
+      "severity": "low",
+      "question": "When deciding which food tokens to keep, how much weight should I give to what the bird cards show?",
+      "answer": "When deciding which food tokens to keep, consider the food types shown in the upper left of the bird cards you selected. This will help you plan which birds you can afford to play.",
+      "confidence": "high",
+      "source_quote": "You will probably want to keep food tokens shown in the upper left of the bird cards you selected."
+    },
+    {
+      "issue_id": 4,
+      "category": "unclear_timing",
+      "pages": [
+        2
+      ],
+      "severity": "medium",
+      "question": "Can I look at my bonus cards while I'm deciding which birds to keep?",
+      "answer": "Yes. You may look at your bonus cards at any time while selecting which birds to keep, and you may look at your bird cards while selecting which bonus card to keep.",
+      "confidence": "high",
+      "source_quote": "You may look at your bonus cards while selecting which birds to keep (and vice versa)."
+    },
+    {
+      "issue_id": 6,
+      "category": "unclear_wording",
+      "pages": [
+        6
+      ],
+      "severity": "low",
+      "question": "What should I consider before playing a bird from my hand?",
+      "answer": "Before choosing to play a bird from your hand, consider its habitat, food requirements, and egg cost.",
+      "confidence": "high",
+      "source_quote": "Play a Bird From Your Hand Before choosing to play a bird from your hand, consider its habitat, food habitat requirements, and egg cost."
+    },
+    {
+      "issue_id": 7,
+      "category": "unclear_timing",
+      "pages": [
+        7
+      ],
+      "severity": "medium",
+      "question": "When can I use a card-to-food bonus conversion—do I have to use it right away when I place my action cube?",
+      "answer": "Yes, you must use it immediately when placing your cube. If the slot shows a card-to-food bonus conversion, you may immediately discard at most 1 bird card from your hand to gain an additional food token from the remaining dice in the birdfeeder.",
+      "confidence": "high",
+      "source_quote": "If the slot where you placed your action cube shows a card-to-food bonus conversion, you may discard at most 1 bird card from your hand to gain an additional food."
+    },
+    {
+      "issue_id": 8,
+      "category": "unclear_wording",
+      "pages": [
+        7
+      ],
+      "severity": "low",
+      "question": "Does the 'all dice show the same face' condition count as true if there's only 1 die left in the tray?",
+      "answer": "Yes. If all remaining dice in the tray show the same face—including if there is only 1 die—and you are about to gain food from the birdfeeder for any reason, you may first throw all 5 dice back into the birdfeeder.",
+      "confidence": "high",
+      "source_quote": "If the dice in the tray all show the same face (including if there is only 1 die) and you are about to gain food from the birdfeeder for any reason, you may first throw all 5 dice back into the birdfeeder."
+    },
+    {
+      "issue_id": 9,
+      "category": "unclear_wording",
+      "pages": [
+        7
+      ],
+      "severity": "medium",
+      "question": "The card says 'Gain 1 from the supply'—is that 1 food token or 1 egg token?",
+      "answer": "Most likely this refers to food tokens based on the context of similar birdfeeder-related effects, but the rulebook does not state this explicitly. Check the card's color or icon if available to confirm which type of token you gain.",
+      "confidence": "low",
+      "source_quote": "15cm WHEN ACTIVATED: Gain 1 from the supply."
+    },
+    {
+      "issue_id": 11,
+      "category": "unclear_timing",
+      "pages": [
+        11
+      ],
+      "severity": "medium",
+      "question": "If two players tie for a position in scoring, do both of them get cubes on that place or does the second player get skipped?",
+      "answer": "Place all tied cubes on the same place, and do not award the next rank position to any other player. Both players occupy the tied position; the next available position is skipped.",
+      "confidence": "high",
+      "source_quote": "If players tie, place both cubes on the tied place, and do not award the next place."
+    }
+  ],
+  "needs_human_review": [
+    {
+      "issue_id": 2,
+      "category": "contradiction",
+      "pages": [
+        2
+      ],
+      "severity": "medium",
+      "quote": "Keep up to 5 bird cards and discard the others.",
+      "explanation": "Sentence 115 says players keep 'up to 5' bird cards, but sentence 116 requires discarding 1 food token 'for each bird card you keep.' This creates a contradiction: if you keep 0 bird cards (which is allowed by 'up to 5'), there's no food token cost mentioned. The rule doesn't clarify whether keeping fewer than 5 cards is actually an option or if there's a minimum.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 5,
+      "category": "contradiction",
+      "pages": [
+        5
+      ],
+      "severity": "high",
+      "quote": "Use 1 of your action cubes to mark your score on the end-of-round goal.",
+      "explanation": "Sentence 209 says to use 1 action cube to mark your score, but sentences 210-214 state that you will have progressively fewer action cubes each round (8, 7, 6, 5), implying these cubes are consumed. This contradicts whether action cubes are actually spent on marking scores or used during the round itself.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 10,
+      "category": "contradiction",
+      "pages": [
+        11
+      ],
+      "severity": "medium",
+      "quote": "You must have at least 1 of the targeted items to score points for a goal.",
+      "explanation": "Sentence 399 states you must have at least 1 of the targeted item to score points, but sentence 413 states that if you do not have any of that item, you must still place an action cube on the goal board. This contradicts whether having 0 items allows you to score or participate.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 12,
+      "category": "contradiction",
+      "pages": [
+        5
+      ],
+      "severity": "high",
+      "quote": "Use 1 of your action cubes to mark your score on the end-of-round goal.",
+      "explanation": "Sentence 209 states that each player 'Use[s] 1 of your action cubes to mark your score on the end-of-round goal' during the round structure steps. However, Sentence 211 immediately follows by stating 'Round 1: 8 turns per player', and this appears in the context of explaining action cube availability. The context suggests that cubes are used during the round for actions, not held back for goal scoring. This contradicts Sentence 210 which states 'As a result, you will have 1 fewer action cube to use each round.' If one cube is used for goal marking (Sentence 209), then that cube should not be available for actions, yet Sentence 210-214 describe the number of turns available without accounting for this reduction until the next round. The contradiction is that Sentence 209 implies a cube is spent on goal marking within the round, but Sentences 210-214 describe turn counts that appear to already account for this, creating ambiguity about whether the goal-marking happens before or after the turn count is determined.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 13,
+      "category": "contradiction",
+      "pages": [
+        11
+      ],
+      "severity": "high",
+      "quote": "To indicate the points you score from that goal, each player must place an action cube on the goal board (even if you score 0 points).",
+      "explanation": "Sentence 396 states that players must place an action cube on the goal board to mark their score from end-of-round goals. Sentence 412 also states 'Use an action cube to mark your score on the goal.' However, this directly contradicts the earlier statement in Sentence 209, which also says 'Use 1 of your action cubes to mark your score on the end-of-round goal.' If action cubes are limited per round (8 in Round 1, then 7, 6, 5), and one is spent on goal-marking, this should be reflected in the turn structure description on page 5 (Sentences 210-214). The rulebook does not clearly explain that the 8/7/6/5 turn counts already exclude the goal-marking cube. This is internally inconsistent—either the turn counts account for goal-marking or they don't, but the current text is ambiguous.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    }
+  ]
+}

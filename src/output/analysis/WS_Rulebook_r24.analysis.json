@@ -1,0 +1,312 @@
+{
+  "source": "WS_Rulebook_r24.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "analyzed_at": "2026-09-27 17:11:57",
+  "stats": {
+    "pages": 12,
+    "sentences": 439,
+    "noise_sentences": 141,
+    "avg_sentence_tokens": 16.3,
+    "headings": 42,
+    "issues": {
+      "long_sentence": 6,
+      "vague_quantifier": 16,
+      "ambiguous_reference": 14,
+      "hedge": 5,
+      "timing_cue": 7,
+      "weak_obligation": 1,
+      "inconsistent_terminology": 3
+    }
+  },
+  "terminology": [
+    {
+      "term": "goaltile",
+      "variants": {
+        "goal tile": 2,
+        "g oal tile": 1
+      },
+      "pages": [
+        1,
+        2
+      ]
+    },
+    {
+      "term": "bonuscard",
+      "variants": {
+        "bonus card": 11,
+        "b onus card": 1
+      },
+      "pages": [
+        2,
+        5,
+        8,
+        11
+      ]
+    },
+    {
+      "term": "birdpower",
+      "variants": {
+        "bird power": 4,
+        "birdpower": 1
+      },
+      "pages": [
+        5,
+        8,
+        10
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        5
+      ],
+      "quote": "The winner is the player with the most points accumulated from birds, and tucked birds.",
+      "explanation": "The phrase 'and tucked birds' is unclear. It is not obvious what 'tucked birds' means or how they differ from the birds already mentioned.",
+      "severity": "medium",
+      "suggested_rewrite": "The winner is the player with the most points accumulated from birds, eggs, and tucked birds.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        1
+      ],
+      "scope": "local",
+      "id": 0
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        93,
+        94
+      ],
+      "quote": "Place it next to the bird tray, then populate the tray with 3 face-up bird cards.",
+      "explanation": "The pronoun 'it' in sentence 93 is unclear—it is not obvious what 'it' refers to, as the previous sentence is incomplete and does not establish a clear antecedent.",
+      "severity": "medium",
+      "suggested_rewrite": "Place the deck next to the bird tray, then populate the tray with 3 face-up bird cards.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        2
+      ],
+      "scope": "local",
+      "id": 1
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        115,
+        116
+      ],
+      "quote": "Keep up to 5 bird cards and discard the others.",
+      "explanation": "Sentence 115 says players keep 'up to 5' bird cards, but sentence 116 requires discarding 1 food token 'for each bird card you keep.' This creates a contradiction: if you keep 0 bird cards (which is allowed by 'up to 5'), there's no food token cost mentioned. The rule doesn't clarify whether keeping fewer than 5 cards is actually an option or if there's a minimum.",
+      "severity": "medium",
+      "suggested_rewrite": "Keep up to 5 bird cards and discard the others. For each bird card you keep, you must discard 1 food token.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        2
+      ],
+      "scope": "local",
+      "id": 2
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        117
+      ],
+      "quote": "You will probably want to keep food tokens shown in the upper left of the bird cards you selected.",
+      "explanation": "The word 'probably' makes this advice unclear—it sounds like a suggestion rather than a rule, leaving players uncertain whether this is a recommendation or a mandatory consideration for their selection strategy.",
+      "severity": "low",
+      "suggested_rewrite": "When deciding which food tokens to keep, consider the food types shown in the upper left of the bird cards you selected.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        2
+      ],
+      "scope": "local",
+      "id": 3
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        120
+      ],
+      "quote": "You may look at your bonus cards while selecting which birds to keep (and vice versa).",
+      "explanation": "This sentence is ambiguous about the order of selection—it's unclear whether players select bonus cards and bird cards simultaneously, or whether they can interleave looking at bonus cards during bird selection and vice versa.",
+      "severity": "medium",
+      "suggested_rewrite": "You may look at your bonus cards at any time while selecting which birds to keep, and you may look at your bird cards while selecting which bonus card to keep.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        2
+      ],
+      "scope": "local",
+      "id": 4
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        209,
+        210
+      ],
+      "quote": "Use 1 of your action cubes to mark your score on the end-of-round goal.",
+      "explanation": "Sentence 209 says to use 1 action cube to mark your score, but sentences 210-214 state that you will have progressively fewer action cubes each round (8, 7, 6, 5), implying these cubes are consumed. This contradicts whether action cubes are actually spent on marking scores or used during the round itself.",
+      "severity": "high",
+      "suggested_rewrite": "<UNKNOWN>",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        5
+      ],
+      "scope": "local",
+      "id": 5
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        235
+      ],
+      "quote": "Play a Bird From Your Hand Before choosing to play a bird from your hand, consider its habitat, food habitat requirements, and egg cost.",
+      "explanation": "The phrase 'food habitat requirements' is awkward and unclear—it should be either 'food requirements' or 'habitat requirements' (which are listed separately in S236). The duplication of 'habitat' suggests an extraction or wording error.",
+      "severity": "low",
+      "suggested_rewrite": "Play a Bird From Your Hand Before choosing to play a bird from your hand, consider its habitat, food requirements, and egg cost.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        6
+      ],
+      "scope": "local",
+      "id": 6
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        279,
+        280,
+        282
+      ],
+      "quote": "If the slot where you placed your action cube shows a card-to-food bonus conversion, you may discard at most 1 bird card from your hand to gain an additional food.",
+      "explanation": "It is unclear whether the card-to-food conversion bonus can be used before or after selecting dice from the birdfeeder, since sentence 282 says you must choose among remaining dice when gaining the extra food, but it's not clear if this optional bonus must be exercised immediately when placing the cube or can be delayed.",
+      "severity": "medium",
+      "suggested_rewrite": "If the slot where you placed your action cube shows a card-to-food bonus conversion, you may immediately discard at most 1 bird card from your hand to gain an additional food token from the remaining dice in the birdfeeder.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 7
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        286
+      ],
+      "quote": "If the dice in the tray all show the same face (including if there is only 1 die) and you are about to gain food from the birdfeeder for any reason, you may first throw all 5 dice back into the birdfeeder.",
+      "explanation": "The phrase 'all show the same face' is ambiguous when there is only 1 die remaining. It's unclear whether a single die trivially satisfies this condition or whether the rule only applies when multiple dice all match.",
+      "severity": "low",
+      "suggested_rewrite": "If all remaining dice in the tray show the same face and you are about to gain food from the birdfeeder for any reason, you may first throw all 5 dice back into the birdfeeder.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 8
+    },
+    {
+      "category": "unclear_wording",
+      "sentence_ids": [
+        296
+      ],
+      "quote": "15cm WHEN ACTIVATED: Gain 1 from the supply.",
+      "explanation": "It is unclear what type of token 'Gain 1' refers to—is it food, eggs, or something else?",
+      "severity": "medium",
+      "suggested_rewrite": "WHEN ACTIVATED: Gain 1 [food/egg token] from the supply.",
+      "is_extraction_artifact": false,
+      "quote_verified": true,
+      "pages": [
+        7
+      ],
+      "scope": "local",
+      "id": 9
+    },
+    {
+      "category": "contradiction",
+      "sentence_ids": [
+        399,
+        413
+      ],
+      "quote": "You must have at least 1 of the targeted items to score points for a goal.",
+      "explanation": "Sentence 399 states you must have at least 1 of the targeted item to score points, but sentence 413 states that if you do not have any of that item, you must still place an action cube on the goal board. This contradicts whether having 0 items allows you to score or participate.",
+      "severity": "medium",
+      "suggested_rewrite": "You must have at least 1 of the targeted items to score points for a goal; if you have 0 items, you score 0 points but must still place an action cube on the space marked 0.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        11
+      ],
+      "scope": "local",
+      "id": 10
+    },
+    {
+      "category": "unclear_timing",
+      "sentence_ids": [
+        404,
+        405,
+        406,
+        407
+      ],
+      "quote": "If players tie, place both cubes on the tied place, and do not award the next place.",
+      "explanation": "It is unclear whether 'the next place' refers to the next place in rank order or the next scoring tier. Additionally, the tie-breaking procedure described in sentences 406-407 for the Blue scoring method seems to contradict the simpler handling described here for the Green method.",
+      "severity": "medium",
+      "suggested_rewrite": "If players tie, place all tied cubes on the same place, and do not award the next rank position to any other player.",
+      "is_extraction_artifact": false,
+      "quote_verified": false,
+      "pages": [
+        11
+      ],
+      "scope": "local",
+      "id": 11
+    },
+    {
+      "sentence_ids": [
+        209,
+        211
+      ],
+      "quote": "Use 1 of your action cubes to mark your score on the end-of-round goal.",
+      "explanation": "Sentence 209 states that each player 'Use[s] 1 of your action cubes to mark your score on the end-of-round goal' during the round structure steps. However, Sentence 211 immediately follows by stating 'Round 1: 8 turns per player', and this appears in the context of explaining action cube availability. The context suggests that cubes are used during the round for actions, not held back for goal scoring. This contradicts Sentence 210 which states 'As a result, you will have 1 fewer action cube to use each round.' If one cube is used for goal marking (Sentence 209), then that cube should not be available for actions, yet Sentence 210-214 describe the number of turns available without accounting for this reduction until the next round. The contradiction is that Sentence 209 implies a cube is spent on goal marking within the round, but Sentences 210-214 describe turn counts that appear to already account for this, creating ambiguity about whether the goal-marking happens before or after the turn count is determined.",
+      "severity": "high",
+      "suggested_rewrite": "Clarify the exact timing: either (1) confirm that players use 1 action cube at the END of each round to mark goals, which is why the next round has fewer available actions, or (2) state clearly that the 8/7/6/5 turn counts already reflect the cube used for goal marking at round's end. The current text makes it unclear whether 8 turns in Round 1 means 8 cubes are spent on actions (leaving 0 for goal marking) or whether goal marking happens separately.",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        5
+      ],
+      "scope": "document",
+      "id": 12
+    },
+    {
+      "sentence_ids": [
+        396,
+        412
+      ],
+      "quote": "To indicate the points you score from that goal, each player must place an action cube on the goal board (even if you score 0 points).",
+      "explanation": "Sentence 396 states that players must place an action cube on the goal board to mark their score from end-of-round goals. Sentence 412 also states 'Use an action cube to mark your score on the goal.' However, this directly contradicts the earlier statement in Sentence 209, which also says 'Use 1 of your action cubes to mark your score on the end-of-round goal.' If action cubes are limited per round (8 in Round 1, then 7, 6, 5), and one is spent on goal-marking, this should be reflected in the turn structure description on page 5 (Sentences 210-214). The rulebook does not clearly explain that the 8/7/6/5 turn counts already exclude the goal-marking cube. This is internally inconsistent—either the turn counts account for goal-marking or they don't, but the current text is ambiguous.",
+      "severity": "high",
+      "suggested_rewrite": "Explicitly state in the Round Structure section (page 5) that at the end of each round, AFTER players have used all their available action cubes for turns, each player uses 1 additional action cube (or clarify it's a cube that was already counted in the turn limit) to mark their goal score. Alternatively, if goal-marking uses a cube outside the turn limit, add this to the turn count descriptions so the math is clear: e.g., 'Round 1: 8 turns per player (8 cubes used for actions, then 1 cube used for goal marking, leaving 6 cubes in the supply for Round 2).'",
+      "category": "contradiction",
+      "quote_verified": true,
+      "pages": [
+        11
+      ],
+      "scope": "document",
+      "id": 13
+    }
+  ],
+  "tokens": {
+    "input": 31599,
+    "output": 8547
+  }
+}

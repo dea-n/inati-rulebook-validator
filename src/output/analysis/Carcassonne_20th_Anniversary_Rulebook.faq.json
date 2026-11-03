@@ -1,0 +1,31 @@
+{
+  "source": "Carcassonne_20th_Anniversary_Rulebook.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "faq": [
+    {
+      "issue_id": 0,
+      "category": "unclear_wording",
+      "pages": [
+        5
+      ],
+      "severity": "medium",
+      "question": "How many points do I score for a monastery tile—1 point per surrounding tile plus 1 for the monastery, or something else?",
+      "answer": "You score 1 point for each surrounding tile, plus 1 additional point for the monastery tile itself. For example, a monastery with 4 surrounding tiles scores 5 points total.",
+      "confidence": "high",
+      "source_quote": "You score 1 point for each surrounding tiles, as well as the monastery tile."
+    }
+  ],
+  "needs_human_review": [
+    {
+      "issue_id": 1,
+      "category": "contradiction",
+      "pages": [
+        5
+      ],
+      "severity": "high",
+      "quote": "You score 1 point for each surrounding tiles, as well as the monastery tile.",
+      "explanation": "S93 is unclear but could imply varying points based on surrounding tiles, while S109 explicitly states a completed monastery scores exactly 9 points. These seem to contradict regarding how monastery scoring works.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    }
+  ]
+}

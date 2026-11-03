@@ -1,0 +1,410 @@
+{
+  "source": "TerraformingMars_Rulebook.pdf",
+  "model": "claude-haiku-4-5-20251001",
+  "faq": [
+    {
+      "issue_id": 0,
+      "category": "unclear_timing",
+      "pages": [
+        3
+      ],
+      "severity": "medium",
+      "question": "Can I choose to do 1 or 2 actions on each of my turns during the Action phase?",
+      "answer": "Yes. On each individual turn, you can choose to take either 1 or 2 actions. You make this decision fresh each turn.",
+      "confidence": "high",
+      "source_quote": "In the Action phase, players take turns doing 1 or 2 actions, going around the table until everyone has passed."
+    },
+    {
+      "issue_id": 1,
+      "category": "unclear_wording",
+      "pages": [
+        3
+      ],
+      "severity": "medium",
+      "question": "When a global parameter reaches its goal, do I still get TR if I somehow raise it further?",
+      "answer": "No. Once a global parameter has reached its goal, you can't raise it any further, and raising that parameter no longer increases your TR.",
+      "confidence": "high",
+      "source_quote": "When a global parameter has reached its goal, it can't be raised any further, and so does not increase your TR."
+    },
+    {
+      "issue_id": 3,
+      "category": "unclear_wording",
+      "pages": [
+        4
+      ],
+      "severity": "medium",
+      "question": "Where does the generation marker track time—is it placed on the TR track?",
+      "answer": "The generation marker measures time (in rounds) and advances by 1 each round. It is not placed on the TR track.",
+      "confidence": "high",
+      "source_quote": "The generation marker measures time (rounds) and starts at 1, moving up on the TR track."
+    },
+    {
+      "issue_id": 4,
+      "category": "unclear_timing",
+      "pages": [
+        5
+      ],
+      "severity": "medium",
+      "question": "If I can't raise the oxygen level when placing a greenery tile, do I still place the tile and get its placement bonus?",
+      "answer": "Yes. You still place the tile and receive any placement bonus even if you can't raise the oxygen level; you just don't gain the TR increase.",
+      "confidence": "high",
+      "source_quote": "If you can't raise the oxygen level you don't get the increase in TR either."
+    },
+    {
+      "issue_id": 5,
+      "category": "unclear_wording",
+      "pages": [
+        5
+      ],
+      "severity": "medium",
+      "question": "Can Noctis city be placed next to other cities?",
+      "answer": "No. Noctis city must be placed on its reserved area and, like all cities, cannot be placed adjacent to another city.",
+      "confidence": "high",
+      "source_quote": "May not be placed next to another city (exception: Noctis city must always be placed on its reserved area)."
+    },
+    {
+      "issue_id": 6,
+      "category": "unclear_wording",
+      "pages": [
+        6
+      ],
+      "severity": "medium",
+      "question": "How can I tell the difference between resource icons that mean cubes and resource icons that mean production?",
+      "answer": "Plain resource icons refer to resource cubes you have, while resource icons inside brown boxes refer to production of that resource.",
+      "confidence": "high",
+      "source_quote": "In the game, resource icons refer to resource cubes, while resource icons inside brown boxes refer to production of that resource (see the project card below)."
+    },
+    {
+      "issue_id": 7,
+      "category": "unclear_timing",
+      "pages": [
+        6
+      ],
+      "severity": "high",
+      "question": "When do I convert leftover energy into heat during the production phase?",
+      "answer": "At the beginning of the production phase, you convert leftover energy into heat; after that, you add resource cubes equal to your production.",
+      "confidence": "high",
+      "source_quote": "During the production phase you add resource cubes equal to your production."
+    },
+    {
+      "issue_id": 8,
+      "category": "unclear_wording",
+      "pages": [
+        6
+      ],
+      "severity": "medium",
+      "question": "What's the difference between a blue-ribbon effect and a blue-ribbon action?",
+      "answer": "Blue-ribbon boxes contain either an ongoing effect (always active) or an action (which you can use once per generation). The card will specify which.",
+      "confidence": "high",
+      "source_quote": "Effect / action: Boxes marked by a blue ribbon show an ongoing effect or action that may be used during the game."
+    },
+    {
+      "issue_id": 10,
+      "category": "unclear_timing",
+      "pages": [
+        7
+      ],
+      "severity": "medium",
+      "question": "When do I pay 3 M€ per card during setup—before or after I receive my starting resources?",
+      "answer": "You first reveal your corporation and receive your starting resources and production. After all players have done this, you then pay 3 M€ for each card you keep.",
+      "confidence": "high",
+      "source_quote": "In player order, players then reveal their chosen corporation, get their starting resources and production (if any), and then pay 3 M€ for each project card they keep."
+    },
+    {
+      "issue_id": 11,
+      "category": "unclear_wording",
+      "pages": [
+        7
+      ],
+      "severity": "low",
+      "question": "How do I set up my production at the start of the game?",
+      "answer": "You start with 1 production of each resource, so place your player markers on '1' for each of the six production tracks (in the standard game only).",
+      "confidence": "high",
+      "source_quote": "You start with 1 production of each resource on the player board, so place player markers on the tracks (only in standard game.)"
+    },
+    {
+      "issue_id": 12,
+      "category": "unclear_timing",
+      "pages": [
+        8
+      ],
+      "severity": "medium",
+      "question": "Can I take 0 actions on my turn, or do I have to take 1 or 2?",
+      "answer": "On your turn, you can take 1 or 2 actions, or you can pass (take no actions), which removes you from the round for the rest of the generation.",
+      "confidence": "high",
+      "source_quote": "You can choose to take 1 or 2 actions on your turn."
+    },
+    {
+      "issue_id": 13,
+      "category": "unclear_timing",
+      "pages": [
+        8
+      ],
+      "severity": "low",
+      "question": "Does the action phase continue until everyone passes, or does something happen before the production phase?",
+      "answer": "The turns continue around the table until everyone has passed, and then the production phase begins.",
+      "confidence": "high",
+      "source_quote": "And so the turn continues around until everyone is out by doing no actions."
+    },
+    {
+      "issue_id": 14,
+      "category": "unclear_timing",
+      "pages": [
+        9
+      ],
+      "severity": "medium",
+      "question": "When a card triggers multiple effects, can I choose the order to perform them?",
+      "answer": "Yes. You may perform these effects in any order you choose, so long as all effects are completed before your action ends.",
+      "confidence": "high",
+      "source_quote": "These effects (and other effects triggered by the card you just played) are performed in any order you choose."
+    },
+    {
+      "issue_id": 15,
+      "category": "unclear_terminology",
+      "pages": [
+        9
+      ],
+      "severity": "medium",
+      "question": "The rulebook mentions both 'red frame' and 'red border'—which term is correct?",
+      "answer": "The correct term is 'red border.' Resources or production with a red border means you can affect any player you choose, including yourself.",
+      "confidence": "high",
+      "source_quote": "Resources or production with a red frame means that you can affect any player you choose (even yourself)."
+    },
+    {
+      "issue_id": 16,
+      "category": "unclear_wording",
+      "pages": [
+        10
+      ],
+      "severity": "medium",
+      "question": "What does it mean when the rulebook says 'Red-bordered resources are optional'?",
+      "answer": "You can choose whether or not to apply a red-bordered resource or production effect, including whether to target yourself or other players.",
+      "confidence": "high",
+      "source_quote": "Red-bordered resources are optional, so card C does not remove your own plants, even if you are the only player that has any plant resources."
+    },
+    {
+      "issue_id": 17,
+      "category": "unclear_timing",
+      "pages": [
+        10
+      ],
+      "severity": "medium",
+      "question": "What does it mean for an ongoing effect to 'trigger at any time'?",
+      "answer": "Ongoing effects on active cards activate at the specified times (not at the player's discretion). Actions, by contrast, can be used whenever you choose, like corporation actions.",
+      "confidence": "high",
+      "source_quote": "Active cards (blue, D, E) have ongoing effects that may trigger at any time, or actions that you can use (just like the corporations)."
+    },
+    {
+      "issue_id": 18,
+      "category": "unclear_wording",
+      "pages": [
+        10
+      ],
+      "severity": "low",
+      "question": "When I sell patents and discard cards, how much M€ do I get?",
+      "answer": "You gain M€ equal to the number of cards you discarded. For example, if you discard 3 cards, you gain 3 M€.",
+      "confidence": "high",
+      "source_quote": "Sell patents: You may discard a number of cards from hand to gain the same number of M€."
+    },
+    {
+      "issue_id": 20,
+      "category": "unclear_timing",
+      "pages": [
+        12
+      ],
+      "severity": "high",
+      "question": "What's the exact sequence of events when all three global parameters reach their goals and the game ends?",
+      "answer": "The game ends after this sequence: the current production phase completes, players have one extra chance to convert plants into greenery tiles (in player order; this may trigger other effects such as placement bonuses), and then final scoring takes place.",
+      "confidence": "high",
+      "source_quote": "When all three global parameters (ocean, temperature, and oxygen) have reached their goals, the game ends at the end of that generation."
+    },
+    {
+      "issue_id": 21,
+      "category": "unclear_wording",
+      "pages": [
+        12
+      ],
+      "severity": "low",
+      "question": "Where can I find the explanation of symbols in the rulebook?",
+      "answer": "If you don't understand the symbols on a card, read the explanation in parentheses on the card or see pages 14–15 in this rulebook.",
+      "confidence": "high",
+      "source_quote": "If you don't understand the symbols - read the explanation in parenthesis on the card, or see page 14 & 15 in this rulebook."
+    },
+    {
+      "issue_id": 22,
+      "category": "unclear_timing",
+      "pages": [
+        13
+      ],
+      "severity": "high",
+      "question": "How do I determine where to place the 2 neutral city tiles at the start of the game?",
+      "answer": "Reveal and discard the 4 top cards of the deck, then use their cost numbers to determine where to place the 2 neutral city tiles on the map, each with an adjacent greenery tile.",
+      "confidence": "high",
+      "source_quote": "Before you choose your cards, place 2 neutral city tiles on the map with an adjacent greenery tile each (these tiles are not yours, and do not increase the oxygen level): reveal and discard the 4 top cards of the deck and use their cost numbers to determine the positions of the tiles."
+    },
+    {
+      "issue_id": 23,
+      "category": "unclear_wording",
+      "pages": [
+        13
+      ],
+      "severity": "medium",
+      "question": "Can I steal from the neutral opponent or reduce their resources?",
+      "answer": "You have a neutral opponent from whom you can steal resources or reduce any kind of resources and production.",
+      "confidence": "high",
+      "source_quote": "You have a neutral opponent that you can steal from, or reduce any kind of resources and production from."
+    },
+    {
+      "issue_id": 24,
+      "category": "unclear_timing",
+      "pages": [
+        13
+      ],
+      "severity": "medium",
+      "question": "Which direction do I pass cards during the card draft?",
+      "answer": "Each player passes their remaining cards to the next player (the direction alternates by generation according to the rules).",
+      "confidence": "high",
+      "source_quote": "Each player first gets 4 cards and chooses one to draft, putting it aside and passing the rest to the next player."
+    },
+    {
+      "issue_id": 25,
+      "category": "unclear_timing",
+      "pages": [
+        13
+      ],
+      "severity": "high",
+      "question": "The rulebook says to pass 'to the left' but also says passing direction changes—which is right?",
+      "answer": "Pass to the next player, not always to the left. The direction alternates by generation (clockwise for even generations, counter-clockwise for odd).",
+      "confidence": "high",
+      "source_quote": "Then you have 3 cards; set aside 1 of them and pass the rest to the left."
+    },
+    {
+      "issue_id": 26,
+      "category": "unclear_wording",
+      "pages": [
+        14
+      ],
+      "severity": "medium",
+      "question": "Can I always convert 8 plants into a greenery tile, or only in certain situations?",
+      "answer": "As an action, you may convert 8 plant resources into a greenery tile and place it on the board, provided you have 8 plants and a valid placement location.",
+      "confidence": "high",
+      "source_quote": "As an action, 8 plant resources can be converted into a greenery tile that you place on the board."
+    },
+    {
+      "issue_id": 27,
+      "category": "unclear_wording",
+      "pages": [
+        15
+      ],
+      "severity": "medium",
+      "question": "What does it mean that a greenery tile 'must be placed next to another tile you own if possible'?",
+      "answer": "You must place the greenery tile adjacent to another tile that you own, but only if an empty area next to one of your tiles is available.",
+      "confidence": "high",
+      "source_quote": "The tile must be placed next to another tile that you own if possible."
+    },
+    {
+      "issue_id": 29,
+      "category": "unclear_wording",
+      "pages": [
+        15
+      ],
+      "severity": "low",
+      "question": "When a card removes red-bordered resources, can I target myself?",
+      "answer": "Yes. A card that removes red-bordered resources may remove those resources from any player, including yourself (this effect may also be performed partly, or not at all).",
+      "confidence": "high",
+      "source_quote": "A card that removes red-borded resources, may remove those resources from any one player (this effect may also be performed partly, or not at all)."
+    }
+  ],
+  "needs_human_review": [
+    {
+      "issue_id": 2,
+      "category": "contradiction",
+      "pages": [
+        3
+      ],
+      "severity": "high",
+      "quote": "When a global parameter has reached its goal, it can't be raised any further, and so does not increase your TR.",
+      "explanation": "S35 says parameters at their goal 'can't be raised any further,' but S42 specifies the exact numerical targets for the game to end (14% oxygen, 9 oceans, +8°C). If parameters literally cannot go higher once their goal is reached, players need clarity on whether the targets in S42 are the 'goals' referenced in S35, or if there are intermediate goals and the game can continue past the S42 targets.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 9,
+      "category": "contradiction",
+      "pages": [
+        7
+      ],
+      "severity": "high",
+      "quote": "Shuffle the 10 standard corporation cards (excluding the 2 Corporate Era corporations) and deal 2 to each remaining player.",
+      "explanation": "Sentence 195 states that 2 corporation cards are dealt to each remaining player. Sentence 196 then begins describing dealing 10 project cards to each remaining player. However, sentence 209 (the example) states that 2 corporation cards AND 10 project cards are dealt to each player, which would mean 10 corporation cards total for 3 players. But sentence 195 says to deal 2 to each 'remaining' player (after beginners), yet sentence 209 appears to be showing all three players receiving both cards, suggesting confusion about whether 'remaining' means some or all.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 19,
+      "category": "contradiction",
+      "pages": [
+        11
+      ],
+      "severity": "low",
+      "quote": "When the game ends, though, Kim also produces heat and has 12 in her resource box, compared to Stanley's 12 and Robinson's 5.",
+      "explanation": "The sentence states Kim has 12 heat and Stanley has 12 heat, but then sentence 376 says 'Stanley and Kim both get 5 VPs for first place', implying a tie. However, the exact wording 'compared to Stanley's 12' creates ambiguity about whether Kim and Stanley tied or one had more.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 28,
+      "category": "contradiction",
+      "pages": [
+        15
+      ],
+      "severity": "high",
+      "quote": "The tile must be placed next to another tile that you own if possible.",
+      "explanation": "Sentences 536 and 537 together create a contradiction about when a greenery tile can be placed freely. S536 says it 'must be placed next to' your own tile 'if possible,' but S537 says 'If you have no tiles or no area next to them, you may place it on any available area.' The contradiction is whether placement next to your tiles is mandatory when possible (S536) or only preferred (implied by S537's exception).",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 30,
+      "category": "contradiction",
+      "pages": [
+        4,
+        7
+      ],
+      "severity": "high",
+      "quote": "All players start at 20.",
+      "explanation": "Sentence 61 (page 4, GAME BOARD section) states 'All players start at 20' regarding the Terraform rating (TR) track. However, sentence 190 (page 7, SETUP section) states 'You start with 1 production of each resource on the player board, so place player markers on the tracks (only in standard game.)' This is ambiguous, but the real contradiction appears in sentence 66: 'Solo games start with a TR of 14'. More critically, sentence 469 in the SYMBOLS section (page 14) reiterates 'You start at 20.' Yet sentence 438 states 'Start with a terraform rating of 14 instead of 20 (marked 'solo' on the track)'. The core issue is: sentence 61 says all players start at 20, but this is contradicted by sentences 66 and 438 which specify solo games start at 14, not 20.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 31,
+      "category": "contradiction",
+      "pages": [
+        4,
+        7
+      ],
+      "severity": "high",
+      "quote": "Place the 9 ocean tiles on their reserved space.",
+      "explanation": "Sentence 177 (page 7, SETUP section) instructs to 'Place the 9 ocean tiles on their reserved space.' However, sentence 69 (page 4, GAME BOARD section) states 'Ocean tiles: This global parameter starts with 9 tiles in a stack here, to be placed on the board during the game.' and sentence 533 (page 15, Tiles section) clearly specifies 'There are 12 areas on the game board that are reserved for ocean tiles'. This creates a contradiction: if there are 12 reserved areas but only 9 ocean tiles total in the game, sentence 177 cannot mean all tiles should be placed on the board at setup. The setup instruction contradicts the fundamental game structure where ocean tiles are placed gradually throughout the game as players use the Aquifer standard project (sentence 337-338).",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 32,
+      "category": "contradiction",
+      "pages": [
+        7
+      ],
+      "severity": "medium",
+      "quote": "You start with 1 production of each resource on the player board, so place player markers on the tracks (only in standard game.)",
+      "explanation": "Sentence 190 (page 7, SETUP section) states players should mark 1 production of each resource '(only in standard game.)' This parenthetical qualifier indicates that in non-standard games (like Corporate Era), players do NOT start with 1 production of each resource. However, sentence 208 (page 7, SETUP example) states 'They each choose their color, take a player board and mark starting production by placing markers on '1' on the six production tracks' with no qualification or exception mentioned for variants. Sentence 424 confirms: 'Players start with no extra production of resources' in Corporate Era. Sentence 208's example shows setup for a standard game but provides no guidance on what to do in Corporate Era, creating a contradiction about standard setup procedures.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    },
+    {
+      "issue_id": 33,
+      "category": "contradiction",
+      "pages": [
+        3
+      ],
+      "severity": "medium",
+      "quote": "When a global parameter has reached its goal, it can't be raised any further, and so does not increase your TR.",
+      "explanation": "Sentence 35 states that when a global parameter reaches its goal, it 'can't be raised any further, and so does not increase your TR.' Sentence 36 directly follows: 'You may still play cards and actions that increase the parameter - just ignore that part of the effect.' These two sentences contradict each other: sentence 35 says the parameter 'can't be raised any further' (absolute prohibition), while sentence 36 says you 'may still play cards and actions that increase the parameter' (allowing the action but ignoring the increase). The contradiction is whether attempting to raise a maxed-out parameter is prohibited or merely ineffective.",
+      "reason": "contradiction findings had only 6% measured precision - needs human confirmation before use"
+    }
+  ]
+}
