@@ -1,0 +1,29 @@
+# Secrets: never commit a key
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local data: publisher PDFs, uploads, extracted text, labelling sheets
+src/datasets/
+src/output/uploads/
+src/output/labeling/
+src/output/evaluation/
+src/output/live_upload_test/
+src/output/*.json
+src/output/*.txt
+# the full text of a rulebook is saved next to each new analysis
+*.sentences.json
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# macOS and editors
+.DS_Store
+.vscode/
+.idea/
