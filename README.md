@@ -2,7 +2,7 @@
 
 Inati reads a board game rulebook (a PDF) and lists the places where the text is hard to follow: unclear wording, inconsistent terms, contradictions and unclear timing. Each finding shows the quote, the page, an explanation, a suggested rewrite and a short FAQ entry. A person still has to decide whether a finding is a real problem.
 
-This is the software part of the MSc dissertation *AI-Assisted Validation of Board Game Rulebooks Using Natural Language Processing* (MSc Artificial Intelligence and Data Science, University of York Europe Campus, 2026) by Dea Nixha. It is a research prototype, not a product.
+This is the software part of the MSc dissertation *AI-Assisted Validation of Board Game Rulebooks Using Natural Language Processing* (MSc Artificial Intelligence and Data Science, University of York Europe Campus, 2026). It is a research prototype, not a product.
 
 ## How it works
 
